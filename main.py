@@ -1,4 +1,4 @@
-print('Hello')
-print('Hello')
+# Тестовый проект для понимания GitHub
+
 print('Hello')
 print('Миша, это Дина снова')
