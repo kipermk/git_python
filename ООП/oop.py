@@ -1,3 +1,5 @@
+import human
+
 class dog:
     legs = 4
     had = 1
@@ -24,3 +26,6 @@ bobik2.events()
 bobik3 = dog('Черный', "Большой", "Дина", "Хаски-Икея")
 bobik3.voice = 'gaff'
 bobik3.events()
+
+man = human.Human()
+man.eat()
