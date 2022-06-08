@@ -29,3 +29,5 @@ bobik3.events()
 
 man = human.Human()
 man.eat()
+man.sweat()
+
