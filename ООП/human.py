@@ -17,8 +17,8 @@ class Body:
 
     def sweat(self):
         sweat_ml = random.randint(10, 1000)
-        print(f'выделилось {sweat_ml} мл пота')
-        # return sweat_ml
+        # print(f'выделилось {sweat_ml} мл пота')
+        return f'выделилось {sweat_ml} мл пота'
 
 
 class Human(Head, Body):

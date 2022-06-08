@@ -29,5 +29,6 @@ bobik3.events()
 
 man = human.Human()
 man.eat()
-man.sweat()
+s = man.sweat()
+print(s.replace('пота', 'счастья'))
 
