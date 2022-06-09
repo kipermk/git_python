@@ -1,5 +1,6 @@
 import random
 
+
 class Body:
     heart = 1
 
