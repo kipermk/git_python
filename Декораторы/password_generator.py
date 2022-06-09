@@ -7,6 +7,7 @@ import string
 # и возвращать сложность пароля:
 # слабый - есть только буквы или только цифры
 # средний - есть и цифры и буквы
+
 def decorator(func):
     def wrapper():
         password = func()
