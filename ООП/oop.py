@@ -1,5 +1,6 @@
 import human
 
+
 class dog:
     legs = 4
     had = 1
@@ -31,4 +32,3 @@ man = human.Human()
 man.eat()
 s = man.sweat()
 print(s.replace('пота', 'счастья'))
-
