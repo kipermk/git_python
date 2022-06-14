@@ -6,26 +6,29 @@
 
 
 class Str_Int:
-    def fun_check(self, a): # первый метод
-        if a.isalpha():
+    def __init__(self, str):
+        self.str = str
+
+    def fun_check(self): # первый метод
+        if self.str.isalpha():
             glas = soglas = ''
-            for i in a:
+            for i in self.str:
                 if i in 'aouyei':
                     glas += i
                 else:
                     soglas += i
-            if len(glas) * len(soglas) <= self.func_len(a):
+            if len(glas) * len(soglas) <= self.func_len():
                 return glas
             return soglas
-        elif a.isdigit():
-            summa = sum(int(i) for i in a if i in '2468') # сумма чётных цифр
-            return self.func_len(a) * summa # вызов второго метода и умножение на сумму
+        elif self.str.isdigit():
+            summa = sum(int(i) for i in self.str if i in '2468') # сумма чётных цифр
+            return self.func_len() * summa # вызов второго метода и умножение на сумму
 
-    def func_len(self, a): # второй метод
-        return len(a)
+    def func_len(self): # второй метод
+        return len(self.str)
 
 
 str_ = input()
-object_Str_Int = Str_Int() # создание объекта на основании класса
-rezulitat = object_Str_Int.fun_check(str_) # вызов первого метода
+object_Str_Int = Str_Int(str_) # создание объекта на основании класса
+rezulitat = object_Str_Int.fun_check() # вызов первого метода
 print(rezulitat)
