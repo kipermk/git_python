@@ -43,5 +43,6 @@ class Task:
         self.a = input("Введите данные: ")
 
 
+# Добавил обращение к классу, что бы проверить работу класса
 objectTask = Task()
 print(objectTask.string_number())
